@@ -280,7 +280,10 @@ const logout = () => {
 
             <!-- Page Content -->
             <main>
-                <slot />
+                <div class="container mx-auto">
+                    <slot />
+
+                </div>
             </main>
         </div>
     </div>

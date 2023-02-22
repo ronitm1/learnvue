@@ -38,3 +38,12 @@ Route::middleware([
         ]);
     })->name('dashboard');
 });
+
+Route::get('/home', function() {
+    return Inertia::render('Home', [
+        'name' => 'Ronit Marevci',
+        'frameworks' => [
+            'Laravel', 'Vue', 'Inertia'
+        ]
+    ]);
+});
